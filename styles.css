@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+nav {
+  background-color: #2a7f3b;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .logo h1 {
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b; 
+}
+
+header {
+  background: url('./Assets/huerto.jpg') no-repeat center center/cover;
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.header-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #2a7f3b;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #238225;
+}
+
+.consejos {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.consejos h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.consejos-lista {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.consejo {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.consejo img {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.consejo h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.consejo p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.beneficios {
+  background-color: #e0f7e6;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.beneficios h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.beneficios-lista {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.beneficio {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio img {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a7f3b;
+  color: white;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .consejos-lista, .beneficios-lista {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .consejo, .beneficio {
+    width: 80%;
+  }
+
+  .header-content h1 {
+    font-size: 2em;
+  }
+
+  .header-content p {
+    font-size: 1em;
+  }
+}
+
